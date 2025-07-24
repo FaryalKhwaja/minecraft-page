@@ -24,6 +24,14 @@ body {
     right: 0;
     padding: 1rem 2rem;
 }
+.navigations a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 550;
+}
+.navigations a:hover {
+     color: #3b82f6;
+}
 .welcome {
     margin: 20px;
     font-weight: bold;
@@ -113,4 +121,63 @@ body {
     padding: 20px;
     font-size: 18px;
     text-align: center;
+}
+body.about {
+    background-color:#2e2e2e;
+}
+.about-heading {
+    text-align: center;
+    padding-top: 200px;
+    color: #f9f9f9;
+}
+.about-div {
+    text-align: center;
+    color: #f9f9f9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about-navs {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+    gap: 1rem;
+}
+.about-navs a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 550;
+}
+.about-navs a:hover {
+    color: #3b82f6;
+}
+.contacts-body {
+    background-color:#2e2e2e;
+}
+.contact-navs {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+    gap: 1rem;
+}
+.contact-navs a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 550;
+}
+.contact-navs a:hover {
+    color: #3b82f6;
+}
+.contact-heading {
+    text-align: center;
+    margin-top: 150px;
+}
+.contact-me a {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  color: #f9f9f9;
+  text-decoration: none;
+}
+.contact-me a:hover {
+    color: #3b82f6;
 }
