@@ -1,12 +1,42 @@
-body {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
     font-family: 'poppins', sans-serif;
     color: white;
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .introduction {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .minecraft {
+    width: 90%;
+  }
 }
 .header {
     background-color: #1F2937;
-    height: 500px;
+    min-height: 500px;
     position: relative;
 }
 .logo {
@@ -24,6 +54,24 @@ body {
     right: 0;
     padding: 1rem 2rem;
 }
+@media (max-width: 768px) {
+  .navigations {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .header {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .welcome {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
 .navigations a {
     color: #e0e0e0;
     text-decoration: none;
@@ -39,18 +87,19 @@ body {
 
 }
 .introduction {
-    margin: 20px;
+    flex: 1;
+    min-width: 280px;
     font-weight: lighter;
-    width: 47%;
-    float: left;
 }
 .minecraft {
-    height: 200px;
-    width: 50px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px;
+}
+@media (min-width: 768px) {
+  .minecraft {
     width: 47%;
-    margin-right: 20px;
-    float: right;
-    border-radius: 15px;
+  }
 }
 .button {
     background-color: #3882F6;
@@ -76,10 +125,19 @@ body {
     gap: 1rem;
     padding: 20px;
 }
+@media (max-width: 768px) {
+  .image_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image_container div {
+    text-align: center;
+  }
+}
 .image {
-    width: 25%;
-    height: 250px;
-    width: 250px;
+    max-width: 100%;
+    height: auto;
     border-radius: 12px;
 }
 .quote {
@@ -106,6 +164,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media (max-width: 768px) {
+  .call {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .call div {
+    width: 100%;
+  }
 }
 .sign_up {
     padding: 15px;
